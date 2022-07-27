@@ -22,33 +22,39 @@
                         then $20/mo. thereafter</p>
                 </div>
 
-                <form action="#" class="box form-box">
-                    <div class="input-container" data-error="First Name cannot be empty">
+                <form action="#" class="box form-box" id="form">
+                    <div class="input-container">
                         <input type="text" class="input" id="firstname" placeholder="First Name" value="">
+                        <img src="images/icon-error.svg" alt="">
+                        <small>Error message</small>
                     </div>
-                    <div class="input-container" data-error="First Name cannot be empty">
+                    <div class="input-container">
                         <input type="text" class="input" id="lastname" placeholder="Last Name">
+                        <img src="images/icon-error.svg" alt="">
+                        <small>Error message</small>
                     </div>
-                    <div class="input-container" data-error="First Name cannot be empty">
-                        <input type="email" class="input" id="email" placeholder="Email Address" value="hdhdh">
+                    <div class="input-container">
+                        <input type="email" class="input" id="email" placeholder="Email Address">
+                        <img src="images/icon-error.svg" alt="">
+                        <small>Error message</small>
                     </div>
-                    <div class="input-container" data-error="First Name cannot be empty">
+                    <div class="input-container">
                         <input type="password" class="input" id="password" placeholder="Password">
+                        <img src="images/icon-error.svg" alt="">
+                        <small>Error message</small>
                     </div>
 
-                    <button>Claim your free trial</button>
-                    <small>By clicking the button, you are agreeing to our
+                    <button type="submit">Claim your free trial</button>
+                    <small class="down">By clicking the button, you are agreeing to our
                         <a href="#">Terms and Services</a>
                     </small>
                 </form>
             </div>
         </div>
 
-        <script>
-            document.querySelectorAll('.input-container[data-error].input').forEach(inpEl => {
-                inpEl.addEventListener('input', () => inpEl.parentElement.removeAttribute('data-error'));
-            });
-        </script>
+    
 
+
+        <script src="script.js"></script>
     </body>
 </html></div></body></html>
